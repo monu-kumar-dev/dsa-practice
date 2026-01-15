@@ -13,17 +13,28 @@ public class Prime {
         int num = sc.nextInt();
 
         if (num < 2) {
-            sc.close();
             System.out.println("Not Prime");
+            sc.close();
             return;
-        } else {
-            for (int i = 2; i < num; i++) {
-                if (num % i == 0) {
-                    System.out.print("Not Prime");
-                    sc.close();
-                    return;
-                }
+        }
+        // else {
+        // for (int i = 2; i < num; i++) {
+        // if (num % i == 0) {
+        // System.out.print("Not Prime");
+        // sc.close();
+        // return;
+        // }
+        // }
+
+        // +++++++ OPTIMIZED ++++++++
+
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                System.out.println("Not Prime");
+                sc.close();
+                return;
             }
+
         }
         System.out.print("Prime");
         sc.close();

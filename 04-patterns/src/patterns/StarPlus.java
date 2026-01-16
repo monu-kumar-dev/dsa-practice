@@ -1,4 +1,5 @@
 // Ques: Print the given pattern
+// n = 5
 //     *     
 //     *     
 // * * * * * 

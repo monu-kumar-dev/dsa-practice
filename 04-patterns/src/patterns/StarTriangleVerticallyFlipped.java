@@ -5,6 +5,12 @@
 //   * * * 
 // * * * * 
 
+// 🏆 Final DSA Rule (Yaad rakhna)
+
+// DSA seekhne ke liye clarity > cleverness
+// Type-2 = clarity
+// Type-1 = clever but confusing
+
 package patterns;
 
 import java.util.Scanner;

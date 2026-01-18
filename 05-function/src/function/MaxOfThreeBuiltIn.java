@@ -14,14 +14,20 @@ public class MaxOfThreeBuiltIn {
         System.out.print("enter 3rd num: ");
         double c = sc.nextDouble();
 
+        System.out.print("enter 4th num: ");
+        double d = sc.nextDouble();
+
         // double max = Math.max(a, b);
         // double largest = Math.max(max, c);
 
         // short:->
-        double largest = Math.max(a, Math.max(b, c));
+        double maxInThree = Math.max(a, Math.max(b, c));
 
-        System.out.print("Largest num is: " + largest);
+        System.out.println("largest num in 3 is: " + maxInThree);
 
+        // 4th num ka maximum:-->
+        double maxInFour = Math.max(a, Math.max(b, Math.max(c, d)));
+        System.out.println("Largest num in 4 is: " + maxInFour);
         sc.close();
     }
 }

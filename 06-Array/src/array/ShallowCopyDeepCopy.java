@@ -18,5 +18,27 @@ public class ShallowCopyDeepCopy {
         arr2[0] = 99;
 
         System.out.println(arr1[0]); // 99
+
+        // Deep copy: Deep copy in array ka matlab hai naya array banana aur har element
+        // ko alag-alag copy karna.
+
+        // 🔹 Simple Words
+
+        // New array
+        // New memory
+        // Arrays independent hote hain
+        // Ek me change → dusre pe koi effect nahi
+
+        int[] arr4 = { 10, 20, 30 };
+
+        int[] arr5 = new int[arr4.length];
+
+        for (int i = 0; i < arr4.length; i++) {
+            arr5[i] = arr4[i]; // Deep Copy
+        }
+
+        arr5[0] = 99;
+
+        System.out.println(arr4[0]); // 10
     }
 }

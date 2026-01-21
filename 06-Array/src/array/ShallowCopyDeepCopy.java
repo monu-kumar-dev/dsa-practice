@@ -2,6 +2,9 @@ package array;
 
 public class ShallowCopyDeepCopy {
     public static void main(String[] args) {
+
+        // +++++++ Shallow Copy ++++++++++++++
+
         // shallow copy: Array me shallow copy ka matlab hota hai sirf array ka
         // reference copy hona, actual array ka data copy nahi hota.
 
@@ -19,6 +22,8 @@ public class ShallowCopyDeepCopy {
 
         System.out.println(arr1[0]); // 99
 
+        // +++++++ Deep Copy ++++++++++++++
+
         // Deep copy: Deep copy in array ka matlab hai naya array banana aur har element
         // ko alag-alag copy karna.
 
@@ -33,10 +38,15 @@ public class ShallowCopyDeepCopy {
 
         int[] arr5 = new int[arr4.length];
 
-        for (int i = 0; i < arr4.length; i++) {
-            arr5[i] = arr4[i]; // Deep Copy
-        }
+        // for (int i = 0; i < arr4.length; i++) {
+        // arr5[i] = arr4[i]; // Deep Copy
+        // }
 
+        // arr5[0] = 99;
+
+        // System.out.println(arr4[0]); // 10
+
+        System.arraycopy(arr4, 0, arr5, 0, arr4.length);
         arr5[0] = 99;
 
         System.out.println(arr4[0]); // 10

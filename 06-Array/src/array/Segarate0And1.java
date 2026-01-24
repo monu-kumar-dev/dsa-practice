@@ -13,13 +13,10 @@ public class Segarate0And1 {
     public static void segregate0and1(int[] arr) {
         // code here
         int countOf0 = 0;
-        int countOf1 = 0;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 0) {
                 countOf0 += 1;
-            } else {
-                countOf1 += 1;
             }
 
         }

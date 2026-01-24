@@ -6,6 +6,9 @@ public class RotateAtDType_2 {
         int n = arr.length;
         int d = 3;
 
+        // suppose d > n
+        d = d % n;
+
         reverse(arr, 0, d - 1);
         reverse(arr, d, n - 1);
         reverse(arr, 0, n - 1);

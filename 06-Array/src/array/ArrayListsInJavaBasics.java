@@ -1,6 +1,8 @@
 package array;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ArrayListsInJavaBasics {
     public static void main(String[] args) {
@@ -47,5 +49,12 @@ public class ArrayListsInJavaBasics {
 
         arr.remove(n - 1);
         System.out.println(arr); // [25, 100, 21, 121, 17, 54, 78]
+
+        arr.remove(arr.size() - 1);
+        System.out.println(arr); // [25, 100, 21, 121, 17, 54]
+
+        // Reverse in arrayList:--->
+        Collections.reverse(arr);
+        System.out.println(arr); // [54, 17, 121, 21, 100, 25]
     }
 }

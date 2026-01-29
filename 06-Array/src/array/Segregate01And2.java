@@ -1,6 +1,6 @@
 package array;
 
-public class Segarate01And2 {
+public class Segregate01And2 {
     public static void main(String[] args) {
         int arr[] = { 0, 1, 2, 0, 1, 2 };
         sort012(arr);

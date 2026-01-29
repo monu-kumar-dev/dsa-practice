@@ -15,14 +15,22 @@ public class AddOneType2 {
         int n = arr.length - 1;
         Vector<Integer> result = new Vector<>();
         int carry = 1;
+        // for (int i = n; i >= 0; i--) {
+        //     if (arr[i] + carry <= 9) {
+        //         result.add(arr[i] + carry);
+        //         carry = 0;
+        //     } else {
+        //         result.add(0);
+        //         carry = 1;
+        //     }
+        // }
+
+        // +++++++++++ OR +++++++++++++
+
         for (int i = n; i >= 0; i--) {
-            if (arr[i] + carry <= 9) {
-                result.add(arr[i] + carry);
-                carry = 0;
-            } else {
-                result.add(0);
-                carry = 1;
-            }
+            int sum = arr[i] + carry;
+            result.add(sum % 10);   // digit
+            carry = sum / 10;       // carry
         }
         // if carry still left (like 999)
         if (carry == 1) {

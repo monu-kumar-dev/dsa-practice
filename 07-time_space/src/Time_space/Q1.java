@@ -13,5 +13,5 @@ public class Q1 {
 
 // roughly loop runs n/2 times
 
-// Tc => o(n)
-// Sc => o(1)
+// Tc => O(n)
+// Sc => O(1)

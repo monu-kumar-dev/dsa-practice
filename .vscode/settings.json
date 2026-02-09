@@ -1,7 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "07-time_space/src/time_space",
+        "07-time_space/src",
         "02-if_else/src",
-        "07-time_space/src"
+        "06-Array/src"
     ]
 }

@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
         "07-time_space/src",
+        "06-Array/src",
         "02-if_else/src",
-        "06-Array/src"
+        "08-sorting/src"
     ]
 }

@@ -13,23 +13,42 @@ public class MoveZerosToEnd {
         int n = arr.length;
         // Bubble Sort Style:---> TC = O(n^2)
 
-        for (int i = 0; i < n - 1; i++) {
-            boolean swapped = false;
+        // for (int i = 0; i < n - 1; i++) {
+        // boolean swapped = false;
 
-            for (int j = 0; j < n - 1 - i; j++) {
-                if (arr[j] == 0) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                    swapped = true;
-                }
-            }
+        // for (int j = 0; j < n - 1 - i; j++) {
+        // if (arr[j] == 0) {
+        // int temp = arr[j];
+        // arr[j] = arr[j + 1];
+        // arr[j + 1] = temp;
+        // swapped = true;
+        // }
+        // }
 
-            if (!swapped) {
-                break;
+        // if (!swapped) {
+        // break;
+        // }
+        // System.out.println();
+        // print(arr);
+        // }
+
+        // Optimized Approach:----> Tc = O(n)
+
+        int index = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] != 0) {
+                arr[index] = arr[i];
+                index++;
             }
-            System.out.println();
-            print(arr);
         }
+
+        while (index < arr.length) {
+            arr[index] = 0;
+            index++;
+        }
+
+        System.out.println();
+        print(arr);
     }
 }
